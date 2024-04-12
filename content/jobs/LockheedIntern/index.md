@@ -1,7 +1,7 @@
 ---
 date: '2024-12-21'
 title: 'Software Engineer Intern'
-company: 'Lockheed Martin'
+company: 'upstatement'
 location: 'Syracuse, NY'
 range: 'May - August 2024'
 url: ''
