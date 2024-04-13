@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Stock Market Tools'
-cover: './halcyon.png'
+cover: './Halcyon.png'
 github: 'https://github.com/IsaiahCQ/Python/tree/master/Stock_Market_Tools'
 external: ''
 tech:
@@ -11,4 +11,4 @@ tech:
   - Pyinstaller
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+<text style='color: #6d999e'> Using Pyinstaller, Tkinter, and Finnhub, I built a desktop application that lets users search for stock quotes, generate financial reports and interact with the stock market in a variety of other ways.</text>
