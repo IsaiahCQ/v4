@@ -1,6 +1,6 @@
 ---
 date: '2024-12-21'
-title: 'Software Engineer Intern'
+title: 'Incoming Software Engineer Intern'
 company: 'Lockheed Martin'
 location: 'Syracuse, NY'
 range: 'May - August 2024'

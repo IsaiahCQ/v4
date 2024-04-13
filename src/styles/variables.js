@@ -13,8 +13,8 @@ const variables = css`
     --lightest-slate: #233554; // main second
     --white: #e6f1ff;
     --green: #6d999e; //logo outline
-    --green-tint-dark: #8b362f;
-    --green-tint: #f6bdb9;
+    --green-tint-dark: #f0ead6; //resume hover color
+    --green-tint: #0a192f; //button hover color.
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;

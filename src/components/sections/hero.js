@@ -59,16 +59,19 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hey, my name is</h1>;
+  const one = <h1>Hello, my name is</h1>;
   const two = <h2 className="big-heading">Isaiah Quattlebaum,</h2>;
   const three = <h3 className="big-heading"> and I'm a sophomore at RPI.</h3>;
   const four = (
     <>
       <p>
-        I'm majoring in Computer Science, and I plan on selecting either "Artificial Intelligence and Data"
-        or "Theory, Algorithms, and Mathematics" as my specialization.
-        I'm also an incoming intern at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
+        I'm majoring in Computer Science, and I plan on selecting either Artificial Intelligence and
+        Data or Theory, Algorithms, and Mathematics as my specialization. I'm also an incoming
+        intern at
+        <a
+          href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems.html"
+          target="_blank"
+          rel="noreferrer">
           Lockheed Martin
         </a>
         .

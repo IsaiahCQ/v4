@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'C++', 'Matlab', 'Assembly', 'Bash Scripting'];
+  const skills = ['C++', 'Git', 'Python', 'Jira', 'Matlab', 'Agile', 'Bash Scripting', 'Bitbucket'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,11 +135,24 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>temp</p>
+            <p>
+              Hey there, I am a second-year computer science student at{' '}
+              <a href="https://www.rpi.edu/" target="_blank" rel="noreferrer">
+                {' '}
+                Rensselaer Polytechnic Institute{' '}
+              </a>
+              , and my expected graduate date is May 2026. I'm deeply interested in data science,
+              software engineering, and embedded computing.
+            </p>
 
-            <p>temp</p>
+            <p>
+              I'm a die hard New York Knicks fan, a metalhead that's learning to play guitar, and a
+              avid hater of the Boston Red Soxs.{' '}
+            </p>
 
-            <p>Here are the languages I'm most familiar with:</p>
+            <p>
+              Here are some of the languages, technologies, and methodologies I'm familiar with:
+            </p>
           </div>
 
           <ul className="skills-list">

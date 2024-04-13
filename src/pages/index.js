@@ -6,9 +6,9 @@ import {
   Hero,
   About,
   Jobs,
-  Contact,
-  //Featured,
+  Featured,
   //Projects,
+  Contact,
 } from '@components';
 
 const StyledMainContainer = styled.main`
@@ -21,8 +21,8 @@ const IndexPage = ({ location }) => (
       <Hero />
       <About />
       <Jobs />
+      <Featured />
       {/* <Projects /> */}
-      {/* <Featured /> */}
       <Contact />
     </StyledMainContainer>
   </Layout>
