@@ -2,8 +2,8 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    --dark-navy: #d4e6e8;
-    --navy: #d4e6e8;
+    --dark-navy: #f0ead6;
+    --navy: #f0ead6;
     --light-navy: #f0eae7;
     --lightest-navy: #f7f3f1;
     --navy-shadow: rgba(2, 12, 27, 0.7);
@@ -15,8 +15,6 @@ const variables = css`
     --green: #820000;
     --green-tint-dark: #8b362f;
     --green-tint: #f6bdb9;
-
-    
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
