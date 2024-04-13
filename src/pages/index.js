@@ -6,9 +6,9 @@ import {
   Hero,
   About,
   Jobs,
+  Contact,
   //Featured,
   //Projects,
-  Contact,
 } from '@components';
 
 const StyledMainContainer = styled.main`

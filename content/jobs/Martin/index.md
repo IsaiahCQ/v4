@@ -1,7 +1,7 @@
 ---
 date: '2023-12-21'
 title: 'Software Engineer Co-op'
-company: 'Lockheed'
+company: 'Lockheed Martin'
 location: 'Syracuse, NY'
 range: 'February - August 2023'
 url: 'https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems.html'

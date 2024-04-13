@@ -32,6 +32,20 @@ const StyledTabList = styled.div`
   margin: 0;
   list-style: none;
 
+  /* hide scrollbar but allow scrolling */
+
+  // https://blog.hubspot.com/website/hide-scrollbar-css
+
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+
+  scrollbar-width: none; /* for Firefox */
+
+  //overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
   @media (max-width: 600px) {
     display: flex;
     overflow-x: auto;
@@ -69,7 +83,8 @@ const StyledTabList = styled.div`
 const StyledTabButton = styled.button`
   ${({ theme }) => theme.mixins.link};
   display: flex;
-  align-items: left;
+  align-items: center;
+  min-width: 180px;
   width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
@@ -86,7 +101,7 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    min-width: 180px;
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
