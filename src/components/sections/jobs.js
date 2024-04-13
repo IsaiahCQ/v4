@@ -69,13 +69,13 @@ const StyledTabList = styled.div`
 const StyledTabButton = styled.button`
   ${({ theme }) => theme.mixins.link};
   display: flex;
-  align-items: center;
+  align-items: left;
   width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
   border-left: 2px solid var(--lightest-navy);
   background-color: transparent;
-  color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--slate)')};
+  color: ${({ isActive }) => (isActive ? '#6d999e' : '#0a192f')};
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
@@ -95,7 +95,7 @@ const StyledTabButton = styled.button`
 
   &:hover,
   &:focus {
-    background-color: var(--light-navy);
+    background-color: #f0ead6;
   }
 `;
 
