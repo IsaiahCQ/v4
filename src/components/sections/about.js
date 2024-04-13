@@ -22,6 +22,7 @@ const StyledText = styled.div`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -125,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'C++', 'Matlab', 'Assembly', "Bash Scripting"];
+  const skills = ['Python', 'C++', 'Matlab', 'Assembly', 'Bash Scripting'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,13 +135,9 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>
-              temp
-            </p>
+            <p>temp</p>
 
-            <p>
-              temp
-            </p>
+            <p>temp</p>
 
             <p>Here are the languages I'm most familiar with:</p>
           </div>
