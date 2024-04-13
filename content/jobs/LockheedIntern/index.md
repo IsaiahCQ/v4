@@ -1,10 +1,10 @@
 ---
 date: '2024-12-21'
 title: 'Software Engineer Intern'
-company: 'Scout Studio'
+company: 'Lockheed Martin'
 location: 'Syracuse, NY'
 range: 'May - August 2024'
-url: ''
+url: 'https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems.html'
 ---
 
 - N/A
