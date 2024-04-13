@@ -5,14 +5,14 @@ const variables = css`
     --dark-navy: #f0ead6;
     --navy: #f0ead6;
     --light-navy: #f0eae7;
-    --lightest-navy: #f7f3f1;
+    --lightest-navy: #f0ead6; //scroll wheel
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-slate: #495670;
-    --slate: #2b517f;
+    --slate: #0a192f; // third main
     --light-slate: #72716e;
-    --lightest-slate: #9ea2a2;
+    --lightest-slate: #233554; // main second
     --white: #e6f1ff;
-    --green: #820000;
+    --green: #6d999e; //logo outline
     --green-tint-dark: #8b362f;
     --green-tint: #f6bdb9;
 
