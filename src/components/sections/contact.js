@@ -60,9 +60,8 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I'm interning at Lockheed Martin this summer, but i'm always available to chat about future
-        opportunities. Lockheed operates on a 4 x 10 schedule (4 days x 10 hours), so I might not
-        reply back right away, but I'll make sure to respond in a timely manner!
+        I'm always available to chat about opportunities. I might not be able to reply right away,
+        but I'll make sure to respond in a timely manner!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
