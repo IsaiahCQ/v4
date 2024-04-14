@@ -15,8 +15,8 @@ const IconLogo = () => (
         />
       </g>
     </g>
-    <text x="11" y="64" fill="currentColor" fontSize="55px" fontFamily="Consolas, serif">
-      IQ
+    <text x="16" y="69" fill="currentColor" fontSize="62px" fontFamily="Consolas, serif">
+      ☀
     </text>
   </svg>
 );
