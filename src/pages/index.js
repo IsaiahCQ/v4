@@ -5,6 +5,7 @@ import {
   Layout,
   Hero,
   About,
+  Education,
   Jobs,
   Featured,
   //Projects,
@@ -20,6 +21,7 @@ const IndexPage = ({ location }) => (
     <StyledMainContainer className="fillHeight">
       <Hero />
       <About />
+      <Education />
       <Jobs />
       <Featured />
       {/* <Projects /> */}

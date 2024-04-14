@@ -4,9 +4,9 @@ const IconLoader = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <title>Loader Logo</title>
     <g>
-    <text x="15.3" y="65" fill="currentColor" fontSize="42px" fontFamily="Consolas, serif">
-  HEY
-</text>
+      <text x="15.3" y="65" fill="currentColor" fontSize="42px" fontFamily="Consolas, serif">
+        ⌛
+      </text>
       <path
         stroke="currentColor"
         strokeWidth="5"

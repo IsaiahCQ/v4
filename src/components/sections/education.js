@@ -32,6 +32,20 @@ const StyledTabList = styled.div`
   margin: 0;
   list-style: none;
 
+  /* hide scrollbar but allow scrolling */
+
+  // https://blog.hubspot.com/website/hide-scrollbar-css
+
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+
+  scrollbar-width: none; /* for Firefox */
+
+  //overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
   @media (max-width: 600px) {
     display: flex;
     overflow-x: auto;
@@ -70,12 +84,13 @@ const StyledTabButton = styled.button`
   ${({ theme }) => theme.mixins.link};
   display: flex;
   align-items: center;
+  min-width: 120px;
   width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
   border-left: 2px solid var(--lightest-navy);
   background-color: transparent;
-  color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--slate)')};
+  color: ${({ isActive }) => (isActive ? '#6d999e' : '#0a192f')};
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
@@ -86,7 +101,7 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    min-width: 180px;
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
@@ -95,7 +110,7 @@ const StyledTabButton = styled.button`
 
   &:hover,
   &:focus {
-    background-color: var(--light-navy);
+    background-color: #f0ead6;
   }
 `;
 
@@ -167,8 +182,8 @@ const StyledTabPanel = styled.div`
 const Education = () => {
   const data = useStaticQuery(graphql`
     query {
-      jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
+      education: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/education/" } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
@@ -187,7 +202,7 @@ const Education = () => {
     }
   `);
 
-  const EducationData = data.jobs.edges;
+  const educationData = data.education.edges;
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -243,13 +258,13 @@ const Education = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+    <StyledJobsSection id="education" ref={revealContainer}>
+      <h2 className="numbered-heading">Education History</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
-          {EducationData &&
-            EducationData.map(({ node }, i) => {
+          {educationData &&
+            educationData.map(({ node }, i) => {
               const { company } = node.frontmatter;
               return (
                 <StyledTabButton
@@ -270,8 +285,8 @@ const Education = () => {
         </StyledTabList>
 
         <StyledTabPanels>
-          {EducationData &&
-            EducationData.map(({ node }, i) => {
+          {educationData &&
+            educationData.map(({ node }, i) => {
               const { frontmatter, html } = node;
               const { title, url, company, range } = frontmatter;
 
